@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Latency Tester</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Network Latency Tester</h1>
+            <p>Check network latency by sending ping requests to a target address.</p>
+        </header>
+        <main>
+            <form id="latency-form">
+                <label for="target">Enter Target Address (e.g., 8.8.8.8):</label>
+                <input type="text" id="target" name="target" placeholder="Enter IP or domain" required>
+                <button type="submit">Test Latency</button>
+            </form>
+            <div id="output">
+                <h2>Results:</h2>
+                <pre id="result"></pre>
+            </div>
+        </main>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
